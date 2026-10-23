@@ -13,11 +13,7 @@
 
 ## 支持范围
 
-当前针对小米平板 8 Pro 的特定 HyperOS ROM 适配：
-
-```text
-Xiaomi/piano/piano:17/CP2A.260605.016/OS4.0.2.0.XPYCNXM:user/release-keys
-```
+1.0.1 Beta 起，澎湃 OS 3.x、4.x 免小版本检查，不再锁定完整 ROM 指纹或系统组件版本。澎湃 OS 5.x 及之后版本等待适配；实际 Hook 接口签名仍需存在。主要开发设备为小米平板 8 Pro，放宽版本门槛不代表全部机型均已验证。
 
 标准版焦点笔用于开发验证；焦点笔 Pro 已有源码接入与界面预览，尚未完成实笔验证。激光、鼠标、锁屏、息屏及多窗口等路径仍有待完成的设备验收；其他 ROM 不视为已兼容。鼠标指南中的笔姿态打磨推迟到下一版。
 
@@ -29,17 +25,17 @@ Xiaomi/piano/piano:17/CP2A.260605.016/OS4.0.2.0.XPYCNXM:user/release-keys
 
 功能设置入口：系统设置 → 手写笔与键盘 → 手写笔 → 功能设置。独立应用提供进入设置的入口。
 
-构建环境、测试和配置备份见 [构建说明](docs/BUILD.md)。架构与行为边界见 [设计说明](docs/DESIGN.md)。1.0 Beta 的功能和未验收范围见 [1.0 Beta 说明](docs/releases/1.0-Beta.md)；旧版记录见 [0.7.7 发布说明](docs/releases/0.7.7.md)。
+构建环境、测试和配置备份见 [构建说明](https://github.com/WondersReady/FocusPen/blob/main/docs/BUILD.md)。架构与行为边界见 [设计说明](https://github.com/WondersReady/FocusPen/blob/main/docs/DESIGN.md)。本次修复见 [1.0.1 Beta 说明](https://github.com/WondersReady/FocusPen/blob/main/docs/releases/1.0.1-Beta.md)；功能与此前验收范围见 [1.0 Beta 说明](https://github.com/WondersReady/FocusPen/blob/main/docs/releases/1.0-Beta.md)。
 
 ## 致谢
 
 特别感谢 **Stylus Plus / ljlVink** 对标准笔鼠标交互的探索，以及 **FocusPen Pro X / HMQYHM** 对 Pro 手势、鼠标和虚拟激光的探索。独立界面使用 **compose-miuix-ui/miuix**，信息组织与布局参考 **KernelSU**、**LSPosed**。
 
-依赖、参考项目及各自许可详见 [开源许可与来源](module/app/src/main/assets/open-source-notices.txt)。教程通过已安装的系统宿主读取官方素材，仓库不包含提取的系统 APK 或原始系统图片。
+依赖、参考项目及各自许可详见 [开源许可与来源](https://github.com/WondersReady/FocusPen/blob/main/module/app/src/main/assets/open-source-notices.txt)。教程通过已安装的系统宿主读取官方素材，仓库不包含提取的系统 APK 或原始系统图片。
 
 ## 仓库内容
 
-`module/` 包含模块与管理器，`tools/v2/` 包含构建及本地测试，`docs/` 包含使用与开发说明。设备日志、截图、个人配置、签名密钥及旧实验文件不在仓库内。
+[源码仓库](https://github.com/WondersReady/FocusPen)中的 `module/` 包含模块与管理器，`tools/v2/` 包含构建及本地测试，`docs/` 包含使用与开发说明。本仓库提供 Xposed 模块索引说明与版本发布。设备日志、截图、个人配置、签名密钥及旧实验文件不在仓库内。
 
 ## 许可范围
 
